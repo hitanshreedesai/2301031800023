@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liked Songs</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.back-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search-bar input {
+    width: 60%;
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.filter-btn {
+    padding: 8px 12px;
+    background: gray;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Liked Songs Title */
+.liked-title {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+/* Add Selected Button */
+.add-selected {
+    background: white;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.add-selected:hover {
+    background: lightgray;
+}
+
+/* Songs List */
+.songs-list {
+    margin-top: 10px;
+}
+
+.song-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1e1e1e;
+    padding: 10px;
+    margin: 5px 20px;
+    border-radius: 10px;
+}
+
+.song-item img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.song-item span {
+    flex-grow: 1;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.song-item .icons i {
+    font-size: 16px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+/* Bottom Music Player */
+.player-bar {
+    position: fixed;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    background: #444;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.player-bar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.player-info {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.song-title {
+    font-size: 14px;
+    color: white;
+}
+
+/* Play Button */
+.play-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.bottom-nav a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+.bottom-nav i {
+    font-size: 20px;
+    margin-bottom: 5px;
+}</style>
+</head>
+<body>
+
+    <!-- Top Navigation (Back Button & Search) -->
+    <div class="header">
+        <button class="back-btn"><i class="fas fa-arrow-left"></i></button>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button class="filter-btn"><i class="fas fa-sliders-h"></i> Filters</button>
+        </div>
+    </div>
+
+    <!-- Liked Songs Title -->
+    <h2 class="liked-title">Liked Songs</h2>
+
+    <!-- Add Selected Button -->
+    <button class="add-selected">
+        <a href="f7.html" style="text-decoration: none; color: inherit;">ADD SELECTED (3)</a>
+      </button>
+    
+
+    <!-- Songs List -->
+    <div class="songs-list">
+        <div class="song-item">
+            <input type="radio" name="song">
+            <img src="https://i.ytimg.com/vi/kn-YYEppN_w/maxresdefault.jpg" alt="Love Story">
+            <span>Love Story</span>
+            <div class="icons">
+                <i class="far fa-bookmark"></i>
+                <i class="far fa-heart"></i>
+                <i class="fas fa-ellipsis-h"></i>
+            </div>
+        </div>
+
+        <div class="song-item">
+            <input type="radio" name="song">
+            <img src="https://i.ytimg.com/vi/aS_IXIYnrYI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBVv5McFtO2orGWWVBfYd4n9gT9zA" alt="Night Changes">
+            <span>Night Changes</span>
+            <div class="icons">
+                <i class="far fa-bookmark"></i>
+                <i class="far fa-heart"></i>
+                <i class="fas fa-ellipsis-h"></i>
+            </div>
+        </div>
+
+        <div class="song-item">
+            <input type="radio" name="song">
+            <img src="https://c.saavncdn.com/103/Channa-Mereya-From-Ae-Dil-Hai-Mushkil-Hindi-2016-500x500.jpg" alt="Channa Mereya">
+            <span>Channa Mereya</span>
+            <div class="icons">
+                <i class="far fa-bookmark"></i>
+                <i class="far fa-heart"></i>
+                <i class="fas fa-ellipsis-h"></i>
+            </div>
+        </div>
+
+        <div class="song-item">
+            <input type="radio" name="song">
+            <img src="https://i1.sndcdn.com/artworks-NYwowngYy8VYIOnz-Q60IiA-t240x240.jpg" alt="Diet Mountain">
+            <span>Diet Mountain</span>
+            <div class="icons">
+                <i class="far fa-bookmark"></i>
+                <i class="far fa-heart"></i>
+                <i class="fas fa-ellipsis-h"></i>
+            </div>
+        </div>
+
+        <div class="song-item">
+            <input type="radio" name="song">
+            <img src="https://i.scdn.co/image/ab67616d0000b273e787cffec20aa2a396a61647" alt="Lover">
+            <span>Lover</span>
+            <div class="icons">
+                <i class="far fa-bookmark"></i>
+                <i class="far fa-heart"></i>
+                <i class="fas fa-ellipsis-h"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Music Player -->
+    <div class="player-bar">
+        <img src="https://i.ytimg.com/vi/aS_IXIYnrYI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBVv5McFtO2orGWWVBfYd4n9gT9zA" alt="Album Cover">
+        <div class="player-info">
+            <p class="song-title">🎵 Night Changes</p>
+        </div>
+        <button class="play-btn"><i class="fas fa-play"></i></button>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+        <a href="#"><i class="fas fa-home"></i><br>Home</a>
+        <a href="#"><i class="fas fa-search"></i><br>Search</a>
+        <a href="#"><i class="fas fa-book"></i><br>Library</a>
+    </div>
+
+</body>
+</html>

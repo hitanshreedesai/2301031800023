@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sent Confirmation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>/* Reset & Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main Container */
+.container {
+    width: 375px;
+    height: 100%;
+    background: black;
+    position: relative;
+}
+
+/* Header */
+header {
+    padding: 20px;
+    font-size: 18px;
+}
+
+header i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Sent Confirmation Box */
+.sent-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #333;
+    padding: 20px 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sent-box i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.sent-box span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Music Player */
+.music-player {
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.music-player img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.music-player span {
+    flex-grow: 1;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.music-player i {
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+/* Navigation Bar */
+nav {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #111;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+}
+
+.nav-item i {
+    font-size: 18px;
+    margin-bottom: 5px;
+}</style>
+</head>
+<body>
+
+    <!-- CONTAINER -->
+    <div class="container">
+        
+        <!-- HEADER -->
+        <header>
+            <i class="fas fa-arrow-left"></i>
+        </header>
+
+        <!-- SENT CONFIRMATION -->
+        <div class="sent-box">
+            <i class="fas fa-check"></i>
+            <span>SENT</span>
+        </div>
+
+        <!-- BOTTOM PLAYER -->
+        <div class="music-player">
+            <img src="https://i.ytimg.com/vi/aS_IXIYnrYI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBVv5McFtO2orGWWVBfYd4n9gT9zA" alt="Album Cover">
+            <span>Night Changes</span>
+            <i class="fas fa-play"></i>
+        </div>
+
+        <!-- NAVIGATION BAR -->
+        <nav>
+            <div class="nav-item">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-search"></i>
+                <span>Search</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-book"></i>
+                <span>Library</span>
+            </div>
+        </nav>
+
+    </div>
+
+</body>
+</html>
