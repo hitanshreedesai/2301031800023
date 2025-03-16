@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist Details</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: #2d2727;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Playlist Container */
+.playlist-container {
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Back Button */
+.back-btn {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Playlist Cover */
+.playlist-cover {
+    width: 80%;
+    max-width: 250px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Playlist Title */
+.playlist-title {
+    font-size: 22px;
+    margin: 10px 0 5px;
+}
+
+/* Playlist Duration */
+.playlist-duration {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 15px;
+}
+
+/* Description */
+.playlist-description {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Add Songs Button */
+.add-songs-btn {
+    background: white;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.add-songs-btn:hover {
+    background: lightgray;
+}
+
+/* Bottom Music Player */
+.player-bar {
+    position: fixed;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    background: #444;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.player-bar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.player-info {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.song-title {
+    font-size: 14px;
+    color: white;
+}
+
+/* Play Button */
+.play-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.bottom-nav a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+.bottom-nav i {
+    font-size: 20px;
+    margin-bottom: 5px;
+}</style>
+</head>
+<body>
+
+    <div class="playlist-container">
+        <!-- Back Button -->
+        <button class="back-btn"><i class="fas fa-arrow-left"></i></button>
+
+        <!-- Playlist Image -->
+        <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da8495e62f8c3d9d06f05f3e6fba" alt="Playlist Cover" class="playlist-cover">
+
+        <!-- Playlist Title -->
+        <h2 class="playlist-title">all time fav.</h2>
+        <p class="playlist-duration">0 min</p>
+
+        <!-- Description -->
+        <p class="playlist-description">Let's find songs for your playlist</p>
+
+        <!-- Add Songs Button -->
+        <button class="add-songs-btn"><a href="f6.html"
+            style="text-decoration: none; color: inherit;">ADD SONGS</a></button>
+    </div>
+
+    <!-- Bottom Music Player -->
+    <div class="player-bar">
+        <img src="https://i.ytimg.com/vi/aS_IXIYnrYI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBVv5McFtO2orGWWVBfYd4n9gT9zA" alt="Album Cover">
+        <div class="player-info">
+            <p class="song-title">🎵 Night Changes</p>
+        </div>
+        <button class="play-button"><i class="fa-solid fa-play"></i></button>
+    </div>
+
+    <!-- Bottom Navigation Bar -->
+    <div class="bottom-nav">
+        <a href="#"><i class="fas fa-home"></i><br>Home</a>
+        <a href="#"><i class="fas fa-search"></i><br>Search</a>
+        <a href="#"><i class="fas fa-book"></i><br>Library</a>
+    </div>
+
+</body>
+</html>
